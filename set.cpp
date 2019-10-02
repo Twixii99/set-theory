@@ -13,7 +13,6 @@ int main(int argc, char const *argv[])
     // UNIVERSAL SECTION TOKEN
     cout << "Enter the number of elements in the universel set -> ";
     cin >> iSize;
-    cout << "\n";
     string sUniversal[iSize];
     cout << "Now enter your universal elements: \n";
     for(int i = 0; i < iSize; ++i)
@@ -33,7 +32,6 @@ int main(int argc, char const *argv[])
         while(iEsize > iSize) {
             cout << "A*a nt htst3bt -> ";
             cin >> iEsize;
-            cout << "\n";
         }
         string sTemp[iEsize];
         cout << "Enter your elements: \n";
@@ -49,6 +47,8 @@ int main(int argc, char const *argv[])
         if(k != iEsize) {
             cout << "A*a tany -> there is an element isn't exist in the universal set bro7 omk\n";
             cout << "Enter your fucken subset again\n";
+            for(x = 0; x < iSize; ++x)
+                arr[i+1][x] = 0;
             --i;
             continue;
         }
