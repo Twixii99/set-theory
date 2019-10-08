@@ -1,5 +1,5 @@
 <!-- this code if you use sublime text editor -->
-
+<!-- you can modify it by make each each snippet tag in a file and and save it as "name.sublime-snippt" in sublime config file -->
 <snippet>
 	<content><![CDATA[
 void ${1:/intersection/union/difference/} (int ${2:para1}, int ${3:para2}, string ${4:universal_arr}[]) {
