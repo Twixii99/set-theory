@@ -1,0 +1,67 @@
+global variable 2D bit_mask array
+global variable size_of_universal, num_of_subsets, size_of_subset
+
+Function intersection (Argument 1st_set, Argument 2nd_set, Argument Universal_array) {
+	For i := 0 to universal_set_size step 1 do:
+		IF the two sets have the same element 
+			then print “ this element “
+	
+	end
+}
+
+Function union (Argument 1st_set, Argument 2nd_set, Argument Universal_array) {
+	For i := 0 to universal_set_size step 1 do:
+		IF one of the two sets have the an element 
+			then print “ this element “
+	
+	end
+}
+
+Function difference (Argument 1st_set, Argument 2nd_set, Argument Universal_array) {
+	For i := 0 to universal_set_size step 1 do:
+		IF the 1st_set has element doesn't exist in the another
+			then print “ this element “
+
+	end
+}
+
+{
+	In the main function :
+	do 
+		Take the number of elements in the universal
+	while the number of elements in the universal is not positive
+	local varible array1 of size number of elements in the universal set
+	for i := 0 to Universal_size step 1:
+		take the i(th) element in array1
+	sort array1
+	set all elements in the zero row to one in a 2D bit_mask boolean array
+	Take the number of subSets
+	for i := 0 to number of sets step 1:
+		Take number of elements in this subset
+		if number of elements is more than the number of elements in universal
+			continue 
+		for j := 0 to number of elements step 1:
+			Take the i(th) element in Temp array
+		sort Temp array
+		for x := 0 k := 0, x to Universal_size  k to subset:
+			if the k(th) element is equal x(th) one 
+				++x, ++k
+			else
+				++x
+		if there is an element that is not at the universal
+			print "ERROR MASSAGE"
+			continue
+	while the programm hasn't find EOF
+		Take the expression
+		if the operator is ^ 
+			send to intersection
+		else if the operator is +
+			send to union
+		else if operator is -
+			send to difference 
+		else
+			back to read a correct expression
+}
+
+
+
