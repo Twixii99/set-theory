@@ -1,3 +1,5 @@
+<!-- this code if you use sublime text editor -->
+
 <snippet>
 	<content><![CDATA[
 void ${1:/intersection/union/difference/} (int ${2:para1}, int ${3:para2}, string ${4:universal_arr}[]) {
